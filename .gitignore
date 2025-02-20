@@ -1,0 +1,25 @@
+# 🔹 Python/Django
+venv/
+__pycache__/
+db.sqlite3
+*.pyc
+*.pyo
+*.log
+*.sqlite3
+media/
+staticfiles/
+.env
+
+# 🔹 Node.js (React)
+node_modules/
+dist/
+.vscode/
+.idea/
+.DS_Store
+package-lock.json
+yarn.lock
+
+# 🔹 Vite & Build Files
+frontend/.vite
+frontend/public/vite.svg
+frontend/dist/
