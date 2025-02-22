@@ -85,7 +85,7 @@ function App() {
 				Marre de vos travaux de redaction ? Nous aussi ! Votre valeur ajoutée est ailleurs.
 			  </h1>
 			  <p className="text-xl text-gray-600 mb-8">
-				Notre outil transforme vos notes brutes en anamnèses et bilans neuropsychologiques structurés en quelques clics.
+				En quelques cliques, votre première séance se transforme en anamnèse, vos notes brutes en une analyse approfondie et un texte clair pour vos patients. Vous n'avez plus qu'à ajuster et valider.
 			  </p>
 			  <button className="bg-blue-600 text-white px-8 py-3 rounded-md text-lg hover:bg-blue-700 transition-colors">
 				Découvrir le projet
