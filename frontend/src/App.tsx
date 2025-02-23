@@ -18,11 +18,11 @@ function App() {
   const faqs = [
 	{
 	  question: "Comment fonctionne l'outil ?",
-	  answer: "L'outil analyse vos prises de notes et génère une première version structurée de l'anamnèse et du bilan. Vous pouvez ensuite l'ajuster à votre convenance."
+	  answer: "L'outil analyse vos prises de notes et la cotation des tests pour vous proposer une première version structurée de votre bilan. Vous pouvez ensuite l'ajuster à votre convenance."
 	},
 	{
 	  question: "L'outil respecte-t-il la confidentialité des données ?",
-	  answer: "Oui, aucune donnée n'est stockée après génération. L'IA fonctionne en local ou via un hébergement sécurisé."
+	  answer: "La confidentialité est notre priorité. Toutes les données sont hébergées dans le respect de la RGPD auprès d'hébergeurs certifiés HDS."
 	},
 	{
 	  question: "L'outil est-il réservé aux neuropsychologues ?",
@@ -30,25 +30,25 @@ function App() {
 	},
 	{
 	  question: "L'IA va-t-elle remplacer le neuropsychologue ?",
-	  answer: "Non, elle est un assistant qui aide à structurer les comptes rendus, mais l'expertise humaine reste indispensable."
+	  answer: "Non, elle est un assistant qui vous aide à structurer et enrichir votre bilan, mais l'expertise humaine reste indispensable."
 	}
   ];
 
   const benefits = [
 	{
 	  icon: <Clock className="w-6 h-6 text-blue-600" />,
-	  title: "Gain de temps",
-	  description: "Rédaction accélérée des bilans et anamnèses"
+	  title: "Une temps de rédaction divisé par 2",
+	  description: "Rédaction accélérée des bilans, de l'anamnèse à l'analyse de la cotation. Du temps mieux employé pour vos patients."
 	},
 	{
 	  icon: <FileText className="w-6 h-6 text-blue-600" />,
-	  title: "Structuration automatique",
-	  description: "Organisation cohérente et professionnelle des rapports"
+	  title: "Un assistant intelligent pour enrichir vos bilans",
+	  description: "Des propositions d'analyses et de recommandations pour élargir votre champ de réflexion"
 	},
 	{
 	  icon: <Settings className="w-6 h-6 text-blue-600" />,
-	  title: "Personnalisable",
-	  description: "Adaptable selon vos pratiques et préférences"
+	  title: "Un outil personnalisable selon vos besoins",
+	  description: "Adaptable selon vos spécialités et vos habitudes de rédaction"
 	}
   ];
 
@@ -82,14 +82,18 @@ function App() {
 		  <div className="flex flex-col md:flex-row items-center justify-between">
 			<div className="md:w-1/2 mb-10 md:mb-0">
 			  <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-				Marre de vos travaux de redaction ? Nous aussi ! Votre valeur ajoutée est ailleurs.
+				Marre de vos travaux de rédaction ? Nous aussi ! Votre valeur ajoutée est ailleurs.
 			  </h1>
 			  <p className="text-xl text-gray-600 mb-8">
-				En quelques cliques, votre première séance se transforme en anamnèse, vos notes brutes en une analyse approfondie et un texte clair pour vos patients. Vous n'avez plus qu'à ajuster et valider.
+				En quelques clics, votre première séance se transforme en anamnèse, vos notes brutes en une analyse approfondie et un texte clair pour vos patients. Vous n'avez plus qu'à ajuster et valider.
 			  </p>
-			  <button className="bg-blue-600 text-white px-8 py-3 rounded-md text-lg hover:bg-blue-700 transition-colors">
+			  <a
+				href="https://forms.gle/p1WJc6SER8yBk32g8"
+				target="_blank"
+				rel="noopener noreferrer"
+				className="bg-blue-600 text-white px-8 py-3 rounded-md text-lg hover:bg-blue-700 transition-colors">
 				Découvrir le projet
-			  </button>
+			  </a>
 			</div>
 			<div className="md:w-1/2">
 			  <img
