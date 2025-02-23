@@ -20,6 +20,6 @@ package-lock.json
 yarn.lock
 
 # 🔹 Vite & Build Files
-frontend/.vite
+#frontend/.vite
 frontend/public/vite.svg
 frontend/dist/
