@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="128" height="128" viewBox="0 0 128 128" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background circle -->
+  <circle cx="64" cy="64" r="60" fill="#4A90E2" opacity="0.1"/>
+  
+  <!-- Brain outline representing psychology -->
+  <path d="M64 28C48.536 28 36 40.536 36 56C36 65.2 40.264 73.336 46.84 78.2C47.784 78.936 48.4 80.024 48.4 81.2V92H79.6V81.2C79.6 80.024 80.216 78.936 81.16 78.2C87.736 73.336 92 65.2 92 56C92 40.536 79.464 28 64 28Z" 
+        stroke="#4A90E2" 
+        stroke-width="4" 
+        fill="none"
+        stroke-linecap="round"/>
+  
+  <!-- Connecting lines representing mental connections -->
+  <path d="M52 60C52 60 56 64 64 64C72 64 76 60 76 60" 
+        stroke="#4A90E2" 
+        stroke-width="3" 
+        fill="none"
+        stroke-linecap="round"/>
+  
+  <!-- Small circles representing thought processes -->
+  <circle cx="48" cy="52" r="4" fill="#4A90E2"/>
+  <circle cx="80" cy="52" r="4" fill="#4A90E2"/>
+  
+  <!-- Heart shape representing care and empathy -->
+  <path d="M64 84C64 84 72 76 76 76C80 76 82 80 82 82C82 86 78 88 76 90C74 92 64 98 64 98" 
+        stroke="#4A90E2" 
+        stroke-width="3" 
+        fill="none"
+        stroke-linecap="round"/>
+  <path d="M64 84C64 84 56 76 52 76C48 76 46 80 46 82C46 86 50 88 52 90C54 92 64 98 64 98" 
+        stroke="#4A90E2" 
+        stroke-width="3" 
+        fill="none"
+        stroke-linecap="round"/>
+</svg>

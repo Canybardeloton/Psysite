@@ -82,17 +82,17 @@ function App() {
 		  <div className="flex flex-col md:flex-row items-center justify-between">
 			<div className="md:w-1/2 mb-10 md:mb-0">
 			  <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-				Marre de vos travaux de rédaction ? Nous aussi ! Votre valeur ajoutée est ailleurs.
+				Niels est l'assistant rédactionnel des neuropsychologues. Son but, vous aider à vous recentrer sur votre cœur de métier : le bien-être de vos patients.
 			  </h1>
-			  <p className="text-xl text-gray-600 mb-8">
-				En quelques clics, votre première séance se transforme en anamnèse, vos notes brutes en une analyse approfondie et un texte clair pour vos patients. Vous n'avez plus qu'à ajuster et valider.
+			  <p className="text-xl text-gray-600 mb-8 max-w-xl">
+				Reprenez la main sur votre temps. En quelques clics, votre première séance se transforme en anamnèse, vos notes brutes en une analyse approfondie et un bilan clair pour vos patients. Vous n'avez plus qu'à ajuster et valider.
 			  </p>
 			  <a
 				href="https://forms.gle/p1WJc6SER8yBk32g8"
 				target="_blank"
 				rel="noopener noreferrer"
 				className="bg-blue-600 text-white px-8 py-3 rounded-md text-lg hover:bg-blue-700 transition-colors">
-				Découvrir le projet
+				Participer à l'étude
 			  </a>
 			</div>
 			<div className="md:w-1/2">
@@ -110,7 +110,7 @@ function App() {
 	  <section className="py-20 bg-white" id="about">
 		<div className="container mx-auto px-4">
 		  <h2 className="text-3xl font-bold text-center text-gray-900 mb-12">
-			Pourquoi ce projet ?
+			Comment Niels va vous faciliter la vie ?
 		  </h2>
 		  <div className="grid md:grid-cols-3 gap-8">
 			{benefits.map((benefit, index) => (
@@ -232,7 +232,7 @@ function App() {
 			<div className="flex justify-between items-center">
 				<div className="flex items-center space-x-4">
 				<Brain className="w-8 h-8 text-blue-600" />
-				<span className="text-xl font-semibold">NeuroPsy Assistant</span>
+				<span className="text-xl font-semibold">Niels</span>
 				</div>
 				<div className="flex space-x-4">
 				<a href="#" className="text-gray-400 hover:text-white">
