@@ -82,10 +82,10 @@ function App() {
 		  <div className="flex flex-col md:flex-row items-center justify-between">
 			<div className="md:w-1/2 mb-10 md:mb-0">
 			  <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-				Niels est l'assistant rédactionnel des neuropsychologues. Son but, vous aider à vous recentrer sur votre cœur de métier : le bien-être de vos patients.
+				Niels est l'assistant rédactionnel des neuropsychologues.
 			  </h1>
 			  <p className="text-xl text-gray-600 mb-8 max-w-xl">
-				Reprenez la main sur votre temps. En quelques clics, votre première séance se transforme en anamnèse, vos notes brutes en une analyse approfondie et un bilan clair pour vos patients. Vous n'avez plus qu'à ajuster et valider.
+			  Son but, vous aider à vous recentrer sur votre cœur de métier : le bien-être de vos patients. En quelques clics, votre première séance se transforme en anamnèse, vos notes brutes en une analyse approfondie et un bilan clair pour vos patients. Vous n'avez plus qu'à ajuster et valider.
 			  </p>
 			  <a
 				href="https://forms.gle/p1WJc6SER8yBk32g8"
