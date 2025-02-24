@@ -14,6 +14,34 @@ import {
 
 function App() {
   const [openFaqIndex, setOpenFaqIndex] = useState<number | null>(null);
+  const [formData, setFormData] = useState({
+    name: '',
+    email: '',
+    message: ''
+  });
+
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    try {
+      const response = await fetch('/api/contact/', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/x-www-form-urlencoded',
+        },
+        body: new URLSearchParams(formData)
+      });
+
+      if (response.ok) {
+        alert('Message envoyé avec succès !');
+        setFormData({ name: '', email: '', message: '' });
+      } else {
+        alert('Erreur lors de l\'envoi du message');
+      }
+    } catch (error) {
+      console.error('Erreur:', error);
+      alert('Erreur lors de l\'envoi du message');
+    }
+  };
 
   const faqs = [
 	{
@@ -190,38 +218,44 @@ function App() {
 			Contactez-nous
 		  </h2>
 		  <div className="max-w-2xl mx-auto">
-			<form className="bg-white p-8 rounded-lg shadow-md">
-			  <div className="mb-6">
-				<label htmlFor="name" className="block text-gray-700 mb-2">Nom</label>
-				<input
-				  type="text"
-				  id="name"
-				  className="w-full p-2 border rounded-md focus:border-blue-500 focus:ring-1 focus:ring-blue-500"
-				/>
-			  </div>
-			  <div className="mb-6">
-				<label htmlFor="email" className="block text-gray-700 mb-2">Email</label>
-				<input
-				  type="email"
-				  id="email"
-				  className="w-full p-2 border rounded-md focus:border-blue-500 focus:ring-1 focus:ring-blue-500"
-				/>
-			  </div>
-			  <div className="mb-6">
-				<label htmlFor="message" className="block text-gray-700 mb-2">Message</label>
-				<textarea
-				  id="message"
-				  rows={4}
-				  className="w-full p-2 border rounded-md focus:border-blue-500 focus:ring-1 focus:ring-blue-500"
-				></textarea>
-			  </div>
-			  <button
-				type="submit"
-				className="w-full bg-blue-600 text-white py-2 px-4 rounded-md hover:bg-blue-700 transition-colors"
-			  >
-				Envoyer
-			  </button>
-			</form>
+				<form onSubmit={handleSubmit} className="bg-white p-8 rounded-lg shadow-md">
+				  <div className="mb-6">
+					<label htmlFor="name" className="block text-gray-700 mb-2">Nom</label>
+					<input
+					  type="text"
+					  id="name"
+					  value={formData.name}
+					  onChange={(e) => setFormData({...formData, name: e.target.value})}
+					  className="w-full p-2 border rounded-md focus:border-blue-500 focus:ring-1 focus:ring-blue-500"
+					/>
+				  </div>
+				  <div className="mb-6">
+					<label htmlFor="email" className="block text-gray-700 mb-2">Email</label>
+					<input
+					  type="email"
+					  id="email"
+					  value={formData.email}
+					  onChange={(e) => setFormData({...formData, email: e.target.value})}
+					  className="w-full p-2 border rounded-md focus:border-blue-500 focus:ring-1 focus:ring-blue-500"
+					/>
+				  </div>
+				  <div className="mb-6">
+					<label htmlFor="message" className="block text-gray-700 mb-2">Message</label>
+					<textarea
+					  id="message"
+					  rows={4}
+					  value={formData.message}
+					  onChange={(e) => setFormData({...formData, message: e.target.value})}
+					  className="w-full p-2 border rounded-md focus:border-blue-500 focus:ring-1 focus:ring-blue-500"
+					></textarea>
+				  </div>
+				  <button
+					type="submit"
+					className="w-full bg-blue-600 text-white py-2 px-4 rounded-md hover:bg-blue-700 transition-colors"
+				  >
+					Envoyer
+				  </button>
+				</form>
 		  </div>
 		</div>
 	  </section>

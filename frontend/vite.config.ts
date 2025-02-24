@@ -4,19 +4,20 @@ import react from '@vitejs/plugin-react';
 export default defineConfig({
   plugins: [react()],
   optimizeDeps: {
-    exclude: ['lucide-react'],
+	exclude: ['lucide-react'],
   },
   server: {
-    proxy: {
-      '/api': {
-        target: 'http://localhost:8000',
-        changeOrigin: true,
-      }
-    }
+	proxy: {
+	  '/api': {
+		target: 'http://localhost:8000',
+		changeOrigin: true,
+	  }
+	}
   },
   build: {
-    outDir: 'dist',
-    assetsDir: 'static',
-    emptyOutDir: true,
+	manifest: true,
+	outDir: 'dist',
+	assetsDir: 'static',
+	emptyOutDir: true,
   }
 });
