@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'api',  # Ajout de l'application api
+    'django_vite',  # Ajout de l'application django_vite
 ]
 
 MIDDLEWARE = [
@@ -49,6 +50,15 @@ MIDDLEWARE = [
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
+
+# Ajoutez ces configurations Vite
+DJANGO_VITE = {
+    "default": {
+        "dev_mode": DEBUG,
+        "dev_server_port": 5173,
+        "manifest_path": BASE_DIR / "frontend" / "dist" / "manifest.json",
+    }
+}
 
 # Configuration email
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'

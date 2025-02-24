@@ -18,7 +18,7 @@ def contact_view(request):
 				f'Contact de {name}',
 				f'Message de {name} ({email}):\n\n{message}',
 				email,
-				['votre-email@domaine.com'],  # Remplacez par votre email
+				['armel.gilibert@gmail.com'],  # Remplacez par votre email
 				fail_silently=False,
 			)
 
